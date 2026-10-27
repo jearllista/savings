@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jearllista-savings"
+version = "0.1.0"
+description = "按命中比例与缓存价格差计算节省额，并给出敏感性区间"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "jearllista" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://jearllista.github.io"
+Repository = "https://github.com/jearllista/savings"
+Issues = "https://github.com/jearllista/savings/issues"
+
+[project.scripts]
+savings = "savings:main"
+
+[tool.setuptools]
+py-modules = ["savings"]
